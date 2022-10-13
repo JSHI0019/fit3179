@@ -39,10 +39,7 @@
             "encoding": {
                 "color": {
                     "field": "Country",
-                    "type": "nominal",
-                    "legend": {
-                        "orient": "left"
-                    }
+                    "type": "nominal"
                 },
                 "opacity": {
                     "value": 0.6

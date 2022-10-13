@@ -25,9 +25,6 @@
         "color": {
             "field": "Country",
             "type": "nominal",
-            "legend": {
-                "orient": "left"
-            },
             "scale": {
                 "domain": [
                     "South Africa",
