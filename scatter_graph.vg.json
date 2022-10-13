@@ -8,17 +8,6 @@
     },
     "params": [
         {
-            "name": "Unemployment_rate_above",
-            "value": 0,
-            "bind": {
-                "input": "range",
-                "min": 0,
-                "max": 30,
-                "step": 100,
-                "name": "Unemployment Rate (%): "
-            }
-        },
-        {
             "name": "Country_selection",
             "bind": {
                 "input": "select",
@@ -28,7 +17,8 @@
                     "France",
                     "Russia",
                     "United Kingdom",
-                    "United States of America"
+                    "United States of America",
+                    "Australia"
                 ],
                 "labels": [
                     "Show All",
@@ -36,7 +26,8 @@
                     "France",
                     "Russia",
                     "United Kingdom",
-                    "United States of America"
+                    "United States of America",
+                    "Australia"
                 ],
                 "name": "Country Selection: "
             }
@@ -47,14 +38,7 @@
             "filter": "datum.Unemployment > 0"
         },
         {
-            "filter": "datum.Unemployment > Unemployment_rate_above"
-        },
-        {
             "filter": "Country_selection == null || datum.Country == Country_selection"
-        },
-        {
-            "calculate": "datum.Confirmed/datum.Population * 10000",
-            "as": "Cases per 10,000 Population"
         }
     ],
     "encoding": {
@@ -63,12 +47,12 @@
             "type": "quantitative",
             "title": "Year",
             "axis": {
-                "tickCount": 20
+                "tickCount": 31
             },
             "scale": {
                 "type": "log",
                 "domain": [
-                    2001,
+                    1990,
                     2021
                 ]
             }
@@ -76,52 +60,18 @@
         "y": {
             "field": "Unemployment",
             "type": "quantitative",
-            "axis": {
-                "tickCount": 100
-            },
-            "scale": {
-                "type": "log",
-                "domain": [
-                    0,
-                    30
-                ]
-            }
+            "title": "Unemployment Rate (%)"
         }
     },
     "layer": [
         {
-            "mark": "circle",
+            "mark": "area",
             "encoding": {
-                "size": {
-                    "field": "Unemployment",
-                    "type": "quantitative",
-                    "scale": {
-                        "type": "threshold",
-                        "domain": [
-                            1,
-                            7.5,
-                            15,
-                            22.5,
-                            30
-                        ],
-                        "range": [
-                            10,
-                            50,
-                            150,
-                            200,
-                            300,
-                            400
-                        ]
-                    },
-                    "legend": {
-                        "format": ".2s"
-                    }
-                },
                 "color": {
                     "field": "Country",
                     "type": "nominal",
                     "legend": {
-                        "orient": "right"
+                        "orient": "left"
                     }
                 },
                 "opacity": {
@@ -133,75 +83,14 @@
                         "type": "nominal"
                     },
                     {
-                        "field": "Deaths",
-                        "type": "quantitative",
-                        "format": ","
-                    },
-                    {
-                        "field": "Recovered",
-                        "type": "quantitative",
+                        "field": "Year",
+                        "type": "nominal",
                         "format": ","
                     },
                     {
                         "field": "Unemployment",
                         "type": "quantitative",
-                        "format": ".2f"
-                    }
-                ]
-            }
-        },
-        {
-            "mark": {
-                "type": "text",
-                "align": "right",
-                "baseline": "middle",
-                "dx": -12,
-                "fontSize": 11.5,
-                "fontStyle": "italic"
-            },
-            "encoding": {
-                "text": {
-                    "field": "Country",
-                    "type": "nominal"
-                },
-                "color": {
-                    "value": "black"
-                },
-                "opacity": {
-                    "condition": {
-                        "test": "datum['Country'] == 'China' || datum['Country'] == 'Singapore' || datum['Country'] == 'Australia' || datum['Country'] == 'New Zealand' || datum['Country'] == 'Italy' || datum['Country'] == 'Yemen' ||  datum['Country'] == 'United States'",
-                        "value": 1
-                    },
-                    "value": 0
-                },
-                "tooltip": [
-                    {
-                        "field": "Country",
-                        "type": "nominal"
-                    },
-                    {
-                        "field": "Confirmed",
-                        "type": "quantitative",
-                        "format": ","
-                    },
-                    {
-                        "field": "Active",
-                        "type": "quantitative",
-                        "format": ","
-                    },
-                    {
-                        "field": "Deaths",
-                        "type": "quantitative",
-                        "format": ","
-                    },
-                    {
-                        "field": "Recovered",
-                        "type": "quantitative",
-                        "format": ","
-                    },
-                    {
-                        "field": "Cases per 10,000 Population",
-                        "type": "quantitative",
+                        "title": "Unemployment Rate (%)",
                         "format": ".2f"
                     }
                 ]
