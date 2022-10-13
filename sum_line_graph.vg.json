@@ -45,17 +45,7 @@
         "x": {
             "field": "Year",
             "type": "quantitative",
-            "title": "Year",
-            "axis": {
-                "tickCount": 31
-            },
-            "scale": {
-                "type": "log",
-                "domain": [
-                    1990,
-                    2021
-                ]
-            }
+            "title": "Year"
         },
         "y": {
             "field": "Unemployment",
@@ -76,6 +66,49 @@
                 },
                 "opacity": {
                     "value": 0.6
+                },
+                "tooltip": [
+                    {
+                        "field": "Country",
+                        "type": "nominal"
+                    },
+                    {
+                        "field": "Year",
+                        "type": "nominal",
+                        "format": ","
+                    },
+                    {
+                        "field": "Unemployment",
+                        "type": "quantitative",
+                        "title": "Unemployment Rate (%)",
+                        "format": ".2f"
+                    }
+                ]
+            }
+        },
+        {
+            "mark": {
+                "type": "text",
+                "align": "right",
+                "baseline": "middle",
+                "dx": -12,
+                "fontSize": 11.5,
+                "fontStyle": "italic"
+            },
+            "encoding": {
+                "text": {
+                    "field": "Country",
+                    "type": "nominal"
+                },
+                "color": {
+                    "value": "black"
+                },
+                "opacity": {
+                    "condition": {
+                        "test": "datum['Year'] == 2021 && (datum['Country'] == 'South Africa' || datum['Country'] == 'Djibouti' || datum['Country'] == 'Eswatini' || datum['Country'] == 'West Bank and Gaza' || datum['Country'] == 'Congo, Rep.')",
+                        "value": 1
+                    },
+                    "value": 0
                 },
                 "tooltip": [
                     {

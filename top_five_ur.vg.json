@@ -1,0 +1,66 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Top 5 Unemployment Rate Countries in 2021",
+    "width": 700,
+    "height": 300,
+    "data": {
+        "url": "https://raw.githubusercontent.com/JSHI0019/fit3179/main/unemployment%20analysis_top_five_ur.csv"
+    },
+    "mark": "bar",
+    "encoding": {
+        "x": {
+            "field": "Country",
+            "type": "nominal"
+        },
+        "y": {
+            "field": "Unemployment",
+            "type": "quantitative",
+            "title": "Unemployment Rate (%)"
+        },
+        "color": {
+            "field": "Country",
+            "type": "nominal",
+            "legend": {
+                "orient": "left"
+            },
+            "scale": {
+                "domain": [
+                    "South Africa",
+                    "Djibouti",
+                    "Eswatini",
+                    "West Bank and Gaza",
+                    "Congo, Rep."
+                ],
+                "scheme": "darkred"
+            }
+        },
+        "tooltip": [
+            {
+                "field": "Country",
+                "type": "nominal",
+                "title": "Country Name"
+            },
+            {
+                "field": "Unemployment",
+                "type": "quantitative",
+                "title": "Unemployment Rate (%)",
+                "format": "0.2f"
+            }
+        ]
+    },
+    "transform": [
+        {
+            "filter": {
+                "field": "Country",
+                "oneOf": [
+                    "South Africa",
+                    "Djibouti",
+                    "Eswatini",
+                    "West Bank and Gaza",
+                    "Congo, Rep."
+                ]
+            }
+        }
+    ],
+    "config": {}
+}
