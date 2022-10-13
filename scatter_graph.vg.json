@@ -4,7 +4,7 @@
     "height": 600,
     "title": "Unemployment Rate (%) Worldwide (2001-2021)",
     "data": {
-        "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/4_interactive_scatter_plot/data/COVID_19_10_Oct_2020.csv"
+        "url": "https://raw.githubusercontent.com/JSHI0019/fit3179/main/unemployment%20analysis_cleaned.csv"
     },
     "params": [
         {
