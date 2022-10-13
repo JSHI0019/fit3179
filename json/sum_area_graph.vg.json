@@ -42,6 +42,9 @@
                     "type": "nominal",
                     "scale": {
                         "scheme": "category20c"
+                    },
+                    "legend": {
+                        "orient": "left"
                     }
                 },
                 "opacity": {
