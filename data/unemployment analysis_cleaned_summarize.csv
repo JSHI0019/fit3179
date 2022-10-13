@@ -1,0 +1,236 @@
+,Country,Country Code,Avg Unemployment Rate
+1,Africa Eastern and Southern,AFE,7.24
+2,Afghanistan,AFG,11.14
+3,Africa Western and Central,AFW,4.94
+4,Angola,AGO,5.45
+5,Albania,ALB,16.32
+6,Arab World,ARB,11.34
+7,United Arab Emirates,ARE,2.35
+8,Argentina,ARG,10.98
+9,Armenia,ARM,12.92
+10,Australia,AUS,6.52
+11,Austria,AUT,4.92
+12,Azerbaijan,AZE,6.59
+13,Burundi,BDI,1.60
+14,Belgium,BEL,7.66
+15,Benin,BEN,1.35
+16,Burkina Faso,BFA,3.44
+17,Bangladesh,BGD,3.76
+18,Bulgaria,BGR,10.92
+19,Bahrain,BHR,1.16
+20,"Bahamas, The",BHS,11.19
+21,Bosnia and Herzegovina,BIH,24.04
+22,Belarus,BLR,8.72
+23,Belize,BLZ,9.52
+24,Bolivia,BOL,3.08
+25,Brazil,BRA,8.92
+26,Barbados,BRB,12.26
+27,Brunei Darussalam,BRN,6.39
+28,Bhutan,BTN,2.40
+29,Botswana,BWA,19.81
+30,Central African Republic,CAF,5.70
+31,Canada,CAN,7.84
+32,Central Europe and the Baltics,CEB,9.27
+33,Switzerland,CHE,3.98
+34,Channel Islands,CHI,6.82
+35,Chile,CHL,7.95
+36,China,CHN,4.01
+37,Cote d'Ivoire,CIV,4.92
+38,Cameroon,CMR,5.36
+39,"Congo, Dem. Rep.",COD,3.61
+40,"Congo, Rep.",COG,20.29
+41,Colombia,COL,11.50
+42,Comoros,COM,6.19
+43,Cabo Verde,CPV,11.47
+44,Costa Rica,CRI,7.49
+45,Caribbean small states,CSS,11.91
+46,Cuba,CUB,3.99
+47,Cyprus,CYP,6.39
+48,Czech Republic,CZE,5.38
+49,Germany,DEU,7.04
+50,Djibouti,DJI,27.73
+51,Denmark,DNK,6.09
+52,Dominican Republic,DOM,6.38
+53,Algeria,DZA,17.93
+54,East Asia & Pacific (excluding high income),EAP,3.78
+55,Early-demographic dividend,EAR,5.97
+56,East Asia & Pacific,EAS,3.80
+57,Europe & Central Asia (excluding high income),ECA,8.41
+58,Europe & Central Asia,ECS,8.65
+59,Ecuador,ECU,4.33
+60,"Egypt, Arab Rep.",EGY,10.16
+61,Euro area,EMU,9.63
+62,Eritrea,ERI,5.82
+63,Spain,ESP,17.01
+64,Estonia,EST,8.47
+65,Ethiopia,ETH,2.82
+66,European Union,EUU,9.41
+67,Fragile and conflict affected situations,FCS,5.76
+68,Finland,FIN,10.01
+69,Fiji,FJI,4.15
+70,France,FRA,9.67
+71,Gabon,GAB,18.92
+72,United Kingdom,GBR,6.33
+73,Georgia,GEO,13.41
+74,Ghana,GHA,6.15
+75,Guinea,GIN,4.78
+76,"Gambia, The",GMB,9.35
+77,Guinea-Bissau,GNB,6.18
+78,Equatorial Guinea,GNQ,8.63
+79,Greece,GRC,13.77
+80,Guatemala,GTM,2.84
+81,Guam,GUM,8.44
+82,Guyana,GUY,12.38
+83,High income,HIC,6.82
+84,"Hong Kong SAR, China",HKG,4.07
+85,Honduras,HND,4.70
+86,Heavily indebted poor countries (HIPC),HPC,4.98
+87,Croatia,HRV,11.98
+88,Haiti,HTI,12.01
+89,Hungary,HUN,7.69
+90,IBRD only,IBD,5.78
+91,IDA & IBRD total,IBT,5.51
+92,IDA total,IDA,4.35
+93,IDA blend,IDB,3.89
+94,Indonesia,IDN,5.20
+95,IDA only,IDX,4.55
+96,India,IND,5.64
+97,Ireland,IRL,9.08
+98,"Iran, Islamic Rep.",IRN,11.29
+99,Iraq,IRQ,9.66
+100,Iceland,ISL,4.05
+101,Israel,ISR,8.91
+102,Italy,ITA,9.94
+103,Jamaica,JAM,13.12
+104,Jordan,JOR,15.07
+105,Japan,JPN,3.76
+106,Kazakhstan,KAZ,7.13
+107,Kenya,KEN,3.26
+108,Kyrgyz Republic,KGZ,7.44
+109,Cambodia,KHM,0.77
+110,"Korea, Rep.",KOR,3.38
+111,Kuwait,KWT,1.61
+112,Latin America & Caribbean (excluding high income),LAC,7.48
+113,Lao PDR,LAO,1.50
+114,Lebanon,LBN,8.87
+115,Liberia,LBR,2.39
+116,Libya,LBY,19.60
+117,St. Lucia,LCA,18.09
+118,Latin America & Caribbean,LCN,7.61
+119,Least developed countries: UN classification,LDC,4.37
+120,Low income,LIC,5.10
+121,Sri Lanka,LKA,7.55
+122,Lower middle income,LMC,5.32
+123,Low & middle income,LMY,5.41
+124,Lesotho,LSO,30.40
+125,Late-demographic dividend,LTE,5.03
+126,Lithuania,LTU,10.78
+127,Luxembourg,LUX,4.19
+128,Latvia,LVA,12.02
+129,"Macao SAR, China",MAC,3.41
+130,Morocco,MAR,11.10
+131,Moldova,MDA,5.95
+132,Madagascar,MDG,3.65
+133,Maldives,MDV,5.48
+134,Middle East & North Africa,MEA,10.74
+135,Mexico,MEX,4.04
+136,Middle income,MIC,5.44
+137,North Macedonia,MKD,29.79
+138,Mali,MLI,6.70
+139,Malta,MLT,5.95
+140,Myanmar,MMR,0.80
+141,Middle East & North Africa (excluding high income),MNA,11.96
+142,Montenegro,MNE,23.05
+143,Mongolia,MNG,6.08
+144,Mozambique,MOZ,3.10
+145,Mauritania,MRT,10.03
+146,Mauritius,MUS,8.26
+147,Malawi,MWI,5.87
+148,Malaysia,MYS,3.40
+149,North America,NAC,6.11
+150,Namibia,NAM,21.03
+151,New Caledonia,NCL,16.19
+152,Niger,NER,1.38
+153,Nigeria,NGA,4.87
+154,Nicaragua,NIC,6.25
+155,Netherlands,NLD,5.01
+156,Norway,NOR,4.13
+157,Nepal,NPL,2.21
+158,New Zealand,NZL,5.96
+159,OECD members,OED,7.03
+160,Oman,OMN,3.74
+161,Other small states,OSS,12.11
+162,Pakistan,PAK,1.49
+163,Panama,PAN,4.15
+164,Peru,PER,4.29
+165,Philippines,PHL,3.41
+166,Papua New Guinea,PNG,2.55
+167,Poland,POL,11.15
+168,Pre-demographic dividend,PRE,5.34
+169,Puerto Rico,PRI,12.59
+170,"Korea, Dem. People's Rep.",PRK,2.73
+171,Portugal,PRT,7.84
+172,Paraguay,PRY,5.55
+173,West Bank and Gaza,PSE,18.70
+174,Pacific island small states,PSS,2.98
+175,Post-demographic dividend,PST,6.82
+176,French Polynesia,PYF,12.15
+177,Qatar,QAT,0.57
+178,Romania,ROU,6.63
+179,Russia,RUS,7.30
+180,Rwanda,RWA,0.92
+181,South Asia,SAS,5.12
+182,Saudi Arabia,SAU,5.79
+183,Sudan,SDN,16.11
+184,Senegal,SEN,6.63
+185,Singapore,SGP,3.98
+186,Solomon Islands,SLB,1.37
+187,Sierra Leone,SLE,3.98
+188,El Salvador,SLV,6.11
+189,Somalia,SOM,19.07
+190,Serbia,SRB,15.51
+191,Sub-Saharan Africa (excluding high income),SSA,6.39
+192,South Sudan,SSD,12.23
+193,Sub-Saharan Africa,SSF,6.39
+194,Small states,SST,11.57
+195,Sao Tome and Principe,STP,14.87
+196,Suriname,SUR,10.09
+197,Slovak Republic,SVK,12.69
+198,Slovenia,SVN,6.84
+199,Sweden,SWE,7.34
+200,Eswatini,SWZ,24.39
+201,Syrian Arab Republic,SYR,8.72
+202,Chad,TCD,0.95
+203,East Asia & Pacific (IDA & IBRD countries),TEA,3.80
+204,Europe & Central Asia (IDA & IBRD countries),TEC,8.60
+205,Togo,TGO,3.48
+206,Thailand,THA,1.32
+207,Tajikistan,TJK,10.35
+208,Turkmenistan,TKM,6.23
+209,Latin America & the Caribbean (IDA & IBRD countries),TLA,7.64
+210,Timor-Leste,TLS,3.82
+211,Middle East & North Africa (IDA & IBRD countries),TMN,11.90
+212,Tonga,TON,2.64
+213,South Asia (IDA & IBRD),TSA,5.12
+214,Sub-Saharan Africa (IDA & IBRD countries),TSS,6.39
+215,Trinidad and Tobago,TTO,8.89
+216,Tunisia,TUN,15.08
+217,Turkiye,TUR,9.56
+218,Tanzania,TZA,2.95
+219,Uganda,UGA,2.42
+220,Ukraine,UKR,7.81
+221,Upper middle income,UMC,5.55
+222,Uruguay,URY,9.83
+223,United States of America,USA,5.91
+224,Uzbekistan,UZB,7.07
+225,St. Vincent and the Grenadines,VCT,19.80
+226,"Venezuela, RB",VEN,9.02
+227,Virgin Islands (U.S.),VIR,11.94
+228,Vietnam,VNM,1.93
+229,Vanuatu,VUT,1.79
+230,World,WLD,5.70
+231,Samoa,WSM,5.84
+232,"Yemen, Rep.",YEM,11.79
+233,South Africa,ZAF,28.23
+234,Zambia,ZMB,13.16
+235,Zimbabwe,ZWE,5.18

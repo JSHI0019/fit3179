@@ -1,0 +1,80 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Unemployment Rate",
+    "width": 800,
+    "height": 400,
+    "projection": {
+        "type": "equalEarth"
+    },
+    "layer": [
+        {
+            "data": {
+                "url": "https://raw.githubusercontent.com/JiazhouLiu/FIT3179/main/VegaLite/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
+                "format": {
+                    "type": "topojson",
+                    "feature": "ne_110m_admin_0_countries"
+                }
+            },
+            "mark": {
+                "type": "geoshape",
+                "fill": "#ddd",
+                "stroke": "white",
+                "strokeWidth": 1
+            }
+        },
+        {
+            "data": {
+                "url": "https://raw.githubusercontent.com/JSHI0019/fit3179/main/unemployment%20analysis_cleaned_summarize.csv"
+            },
+            "transform": [
+                {
+                    "lookup": "Country",
+                    "from": {
+                        "data": {
+                            "url": "https://raw.githubusercontent.com/JiazhouLiu/FIT3179/main/VegaLite/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
+                            "format": {
+                                "type": "topojson",
+                                "feature": "ne_110m_admin_0_countries"
+                            }
+                        },
+                        "key": "properties.NAME"
+                    },
+                    "as": "geo"
+                }
+            ],
+            "mark": {
+                "type": "geoshape",
+                "stroke": "#fff",
+                "strokeWidth": 0.5
+            },
+            "encoding": {
+                "shape": {
+                    "field": "geo",
+                    "type": "geojson"
+                },
+                "color": {
+                    "field": "Avg Unemployment Rate",
+                    "type": "quantitative",
+                    "scale": {
+                        "domain": [
+                            0,
+                            30
+                        ],
+                        "scheme": "reds"
+                    }
+                },
+                "tooltip": [
+                    {
+                        "field": "Country",
+                        "type": "nominal",
+                        "title": "Country"
+                    },
+                    {
+                        "field": "Avg Unemployment Rate",
+                        "type": "quantitative"
+                    }
+                ]
+            }
+        }
+    ]
+}

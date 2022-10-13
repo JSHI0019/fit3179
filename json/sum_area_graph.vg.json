@@ -1,0 +1,100 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 1000,
+    "height": 600,
+    "title": "Unemployment Rate (%) Worldwide (2001-2021)",
+    "data": {
+        "url": "https://raw.githubusercontent.com/JSHI0019/fit3179/main/unemployment%20analysis_cleaned.csv"
+    },
+    "params": [
+        {
+            "name": "Country_selection",
+            "bind": {
+                "input": "select",
+                "options": [
+                    null,
+                    "China",
+                    "France",
+                    "Russia",
+                    "United Kingdom",
+                    "United States of America",
+                    "Australia"
+                ],
+                "labels": [
+                    "Show All",
+                    "China",
+                    "France",
+                    "Russia",
+                    "United Kingdom",
+                    "United States of America",
+                    "Australia"
+                ],
+                "name": "Country Selection: "
+            }
+        }
+    ],
+    "transform": [
+        {
+            "filter": "datum.Unemployment > 0"
+        },
+        {
+            "filter": "Country_selection == null || datum.Country == Country_selection"
+        }
+    ],
+    "encoding": {
+        "x": {
+            "field": "Year",
+            "type": "quantitative",
+            "title": "Year",
+            "axis": {
+                "tickCount": 31
+            },
+            "scale": {
+                "type": "log",
+                "domain": [
+                    1990,
+                    2021
+                ]
+            }
+        },
+        "y": {
+            "field": "Unemployment",
+            "type": "quantitative",
+            "title": "Unemployment Rate (%)"
+        }
+    },
+    "layer": [
+        {
+            "mark": "area",
+            "encoding": {
+                "color": {
+                    "field": "Country",
+                    "type": "nominal",
+                    "legend": {
+                        "orient": "left"
+                    }
+                },
+                "opacity": {
+                    "value": 0.6
+                },
+                "tooltip": [
+                    {
+                        "field": "Country",
+                        "type": "nominal"
+                    },
+                    {
+                        "field": "Year",
+                        "type": "nominal",
+                        "format": ","
+                    },
+                    {
+                        "field": "Unemployment",
+                        "type": "quantitative",
+                        "title": "Unemployment Rate (%)",
+                        "format": ".2f"
+                    }
+                ]
+            }
+        }
+    ]
+}
