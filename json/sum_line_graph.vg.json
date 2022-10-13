@@ -59,7 +59,13 @@
             "encoding": {
                 "color": {
                     "field": "Country",
-                    "type": "nominal"
+                    "type": "nominal",
+                    "legend": {
+                        "orient": "left"
+                    },
+                    "scale": {
+                        "scheme": "category20b"
+                    }
                 },
                 "opacity": {
                     "value": 0.6
