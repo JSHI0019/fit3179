@@ -24,7 +24,7 @@
         },
         {
             "data": {
-                "url": "https://raw.githubusercontent.com/JSHI0019/fit3179/main/unemployment%20analysis_cleaned_summarize.csv"
+                "url": "https://raw.githubusercontent.com/JSHI0019/fit3179/main/data/unemployment%20analysis_cleaned_summarize.csv"
             },
             "transform": [
                 {

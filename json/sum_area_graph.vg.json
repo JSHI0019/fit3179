@@ -4,41 +4,11 @@
     "height": 600,
     "title": "Unemployment Rate (%) Worldwide (2001-2021)",
     "data": {
-        "url": "https://raw.githubusercontent.com/JSHI0019/fit3179/main/unemployment%20analysis_cleaned.csv"
+        "url": "https://raw.githubusercontent.com/JSHI0019/fit3179/main/data/unemployment%20analysis_cleaned.csv"
     },
-    "params": [
-        {
-            "name": "Country_selection",
-            "bind": {
-                "input": "select",
-                "options": [
-                    null,
-                    "China",
-                    "France",
-                    "Russia",
-                    "United Kingdom",
-                    "United States of America",
-                    "Australia"
-                ],
-                "labels": [
-                    "Show All",
-                    "China",
-                    "France",
-                    "Russia",
-                    "United Kingdom",
-                    "United States of America",
-                    "Australia"
-                ],
-                "name": "Country Selection: "
-            }
-        }
-    ],
     "transform": [
         {
             "filter": "datum.Unemployment > 0"
-        },
-        {
-            "filter": "Country_selection == null || datum.Country == Country_selection"
         }
     ],
     "encoding": {

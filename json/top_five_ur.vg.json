@@ -4,9 +4,14 @@
     "width": 700,
     "height": 300,
     "data": {
-        "url": "https://raw.githubusercontent.com/JSHI0019/fit3179/main/unemployment%20analysis_top_five_ur.csv"
+        "url": "https://raw.githubusercontent.com/JSHI0019/fit3179/main/data/unemployment%20analysis_top_five_ur.csv"
     },
-    "mark": "bar",
+    "mark": {
+        "type": "bar",
+        "width": {
+            "band": 0.5
+        }
+    },
     "encoding": {
         "x": {
             "field": "Country",
