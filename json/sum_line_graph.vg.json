@@ -45,7 +45,17 @@
         "x": {
             "field": "Year",
             "type": "quantitative",
-            "title": "Year"
+            "title": "Year",
+            "axis": {
+                "tickCount": 30
+            },
+            "scale": {
+                "type": "log",
+                "domain": [
+                    1991,
+                    2021
+                ]
+            }
         },
         "y": {
             "field": "Unemployment",
