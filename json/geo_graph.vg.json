@@ -77,9 +77,6 @@
                             40
                         ],
                         "scheme": "darkred"
-                    },
-                    "legend": {
-                        "orient": "left"
                     }
                 },
                 "tooltip": [
