@@ -15,7 +15,10 @@
     "encoding": {
         "x": {
             "field": "Country",
-            "type": "nominal"
+            "type": "nominal",
+            "axis": {
+                "labelAngle": 0
+            }
         },
         "y": {
             "field": "Unemployment",
