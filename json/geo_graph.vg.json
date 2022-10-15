@@ -3,7 +3,12 @@
     "title": "Unemployment Rate (%) Worldwide",
     "width": 800,
     "projection": {
-        "type": "equalEarth"
+        "type": "equalEarth",
+        "rotate": [
+            -150,
+            0,
+            0
+        ]
     },
     "height": 400,
     "params": [
@@ -33,6 +38,33 @@
                 "fill": "#ddd",
                 "stroke": "white",
                 "strokeWidth": 1
+            }
+        },
+        {
+            "data": {
+                "url": "https://raw.githubusercontent.com/JSHI0019/fit3179/main/json/oceans.topojson",
+                "format": {
+                    "type": "topojson",
+                    "feature": "oceans"
+                }
+            },
+            "mark": {
+                "type": "geoshape",
+                "fill": "skyblue"
+            }
+        },
+        {
+            "data": {
+                "url": "https://raw.githubusercontent.com/JSHI0019/fit3179/main/json/WorldMapWithGraticules.topojson",
+                "format": {
+                    "type": "topojson",
+                    "feature": "ne_110m_graticules_30"
+                }
+            },
+            "mark": {
+                "type": "geoshape",
+                "fill": null,
+                "stroke": "lightgray"
             }
         },
         {
@@ -74,9 +106,26 @@
                     "scale": {
                         "domain": [
                             0,
+                            1,
+                            2,
+                            3,
+                            4,
+                            5,
+                            10,
+                            20,
                             40
                         ],
-                        "scheme": "darkred"
+                        "range": [
+                            "#F3D431",
+                            "#EFB92D",
+                            "#ED9C25",
+                            "#EB7E20",
+                            "#E75D1E",
+                            "#D14632",
+                            "#B03E38",
+                            "#8C3A36",
+                            "#643633"
+                        ]
                     }
                 },
                 "tooltip": [
