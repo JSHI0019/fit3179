@@ -4,27 +4,15 @@
     "height": 400,
     "title": "Unemployment Rate (%) Worldwide (2001-2021)",
     "data": {
-        "url": "https://raw.githubusercontent.com/JSHI0019/fit3179/main/data/unemployment%20analysis_cleaned.csv"
+        "url": "https://raw.githubusercontent.com/JSHI0019/fit3179/main/data/unemployment%20analysis_cleaned_yearly_summarize.csv"
     },
-    "transform": [
-        {
-            "filter": "datum.Unemployment > 0"
-        }
-    ],
     "encoding": {
         "x": {
             "field": "Year",
-            "type": "quantitative",
             "title": "Year",
+            "type": "nominal",
             "axis": {
-                "tickCount": 31
-            },
-            "scale": {
-                "type": "log",
-                "domain": [
-                    1990,
-                    2021
-                ]
+                "labelAngle": 0
             }
         },
         "y": {
@@ -35,30 +23,12 @@
     },
     "layer": [
         {
-            "mark": "area",
+            "mark": "line",
             "encoding": {
-                "color": {
-                    "field": "Country",
-                    "type": "nominal",
-                    "scale": {
-                        "scheme": "category20c"
-                    },
-                    "legend": {
-                        "orient": "left"
-                    }
-                },
-                "opacity": {
-                    "value": 0.6
-                },
                 "tooltip": [
                     {
-                        "field": "Country",
-                        "type": "nominal"
-                    },
-                    {
                         "field": "Year",
-                        "type": "nominal",
-                        "format": ","
+                        "type": "nominal"
                     },
                     {
                         "field": "Unemployment",
