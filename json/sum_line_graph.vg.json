@@ -44,17 +44,10 @@
     "encoding": {
         "x": {
             "field": "Year",
-            "type": "quantitative",
+            "type": "nominal",
             "title": "Year",
             "axis": {
-                "tickCount": 30
-            },
-            "scale": {
-                "type": "log",
-                "domain": [
-                    1991,
-                    2021
-                ]
+                "labelAngle": 0
             }
         },
         "y": {
@@ -87,8 +80,7 @@
                     },
                     {
                         "field": "Year",
-                        "type": "nominal",
-                        "format": ","
+                        "type": "nominal"
                     },
                     {
                         "field": "Unemployment",
@@ -127,11 +119,6 @@
                     {
                         "field": "Country",
                         "type": "nominal"
-                    },
-                    {
-                        "field": "Year",
-                        "type": "nominal",
-                        "format": ","
                     },
                     {
                         "field": "Unemployment",
