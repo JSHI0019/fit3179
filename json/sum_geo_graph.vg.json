@@ -1,10 +1,15 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Unemployment Rate",
+    "title": "Average Unemployment Rate (%) Over 30 Years (1991 - 2021)",
     "width": 800,
     "height": 400,
     "projection": {
-        "type": "equalEarth"
+        "type": "equalEarth",
+        "rotate": [
+            -150,
+            0,
+            0
+        ]
     },
     "layer": [
         {
@@ -20,6 +25,33 @@
                 "fill": "#ddd",
                 "stroke": "white",
                 "strokeWidth": 1
+            }
+        },
+        {
+            "data": {
+                "url": "https://raw.githubusercontent.com/JSHI0019/fit3179/main/json/oceans.topojson",
+                "format": {
+                    "type": "topojson",
+                    "feature": "oceans"
+                }
+            },
+            "mark": {
+                "type": "geoshape",
+                "fill": "skyblue"
+            }
+        },
+        {
+            "data": {
+                "url": "https://raw.githubusercontent.com/JSHI0019/fit3179/main/json/WorldMapWithGraticules.topojson",
+                "format": {
+                    "type": "topojson",
+                    "feature": "ne_110m_graticules_30"
+                }
+            },
+            "mark": {
+                "type": "geoshape",
+                "fill": null,
+                "stroke": "lightgray"
             }
         },
         {
@@ -71,7 +103,8 @@
                     },
                     {
                         "field": "Avg Unemployment Rate",
-                        "type": "quantitative"
+                        "type": "quantitative",
+                        "title": "Avg Unemployment Rate (%)"
                     }
                 ]
             }
