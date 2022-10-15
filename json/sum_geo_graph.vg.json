@@ -111,7 +111,7 @@
                     {
                         "field": "Avg Unemployment Rate",
                         "type": "quantitative",
-                        "title": "Avg Unemployment Rate (%)"
+                        "title": "Avg Unemploy Rate (%)"
                     }
                 ]
             }
