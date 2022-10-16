@@ -2,7 +2,6 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "width": 1000,
     "height": 400,
-    "title": "Unemployment Rate (%) Worldwide (2001-2021)",
     "data": {
         "url": "https://raw.githubusercontent.com/JSHI0019/fit3179/main/data/unemployment%20analysis_cleaned_yearly_summarize.csv"
     },

@@ -1,7 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Top 5 Unemployment Rate Countries in 2021",
-    "width": 700,
+    "width": 1000,
     "height": 300,
     "data": {
         "url": "https://raw.githubusercontent.com/JSHI0019/fit3179/main/data/unemployment%20analysis_top_five_ur.csv"
