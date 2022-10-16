@@ -1,6 +1,5 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Unemployment Rate (%) Worldwide",
     "width": 700,
     "projection": {
         "type": "equalEarth",

@@ -38,6 +38,44 @@
                     }
                 ]
             }
+        },
+        {
+            "mark": {
+                "type": "text",
+                "align": "right",
+                "baseline": "top",
+                "dx": -12,
+                "fontSize": 11.5,
+                "fontStyle": "italic"
+            },
+            "encoding": {
+                "text": {
+                    "field": "Year",
+                    "type": "nominal"
+                },
+                "color": {
+                    "value": "red"
+                },
+                "opacity": {
+                    "condition": {
+                        "test": "datum['Year'] == 2008 || datum['Year'] == 2019",
+                        "value": 1
+                    },
+                    "value": 0
+                },
+                "tooltip": [
+                    {
+                        "field": "Year",
+                        "type": "nominal"
+                    },
+                    {
+                        "field": "Unemployment",
+                        "type": "quantitative",
+                        "title": "Unemployment Rate (%)",
+                        "format": ".2f"
+                    }
+                ]
+            }
         }
     ]
 }
